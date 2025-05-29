@@ -2,7 +2,7 @@
 ---
 ## Sommaire 
    - [I) Contexte et objectifs du projet](#I-Contexteetobjectifsduprojet)
-   - [II) Capteur à base de crayon graphite](#II-Capteuràjaugedecontrainte(FlexSensor)àbasedecrayongraphite)
+   - [II) Capteur à base de crayon graphite](#II-Capteuràbasedecrayongraphite)
    - [III) Electronique Analogique](#III-Electroniqueanalogique)
    - [IV) KiCad et PCB](#IV-KiCadetPCB)
    - [V) Arduino](#V-Arduino)

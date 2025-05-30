@@ -1,4 +1,4 @@
-ions# 2024-2025-4GP-HILLAH-JACQUET
+2024-2025-4GP-HILLAH-JACQUET
 ---
 ## Sommaire 
    - [I) Contexte et objectifs du projet](#I-Contexteetobjectifsduprojet)
@@ -32,15 +32,16 @@ Nous avons évalué le capteur sur un banc de test avant de conclure par la data
 
 # Matériel utilisé
 
-- Ecran OLED <br>
-- Flex sensor <br>
-- Encodeur Rotatoire <br>
-- Capteur Graphène <br>
-- Module Bluetooth <br>
-- LCT-1050 <br>
-- Potentiomètre MCP 41050 <br>
-- Résistances : 2x100kOhm, 1x33kOhm, 1*10kOhm, 1x1kOhm <br>
-- Capacités : 2x100nF, 1x1uF <br>
+-Résistances: 1x1kΩ, 1x10kΩ, 2x100 kΩ, 1x47kΩ <br>
+-Potentiomètre digital MCP41050 <br>
+-Capacités: 3x100nF et 1x1µF <br>
+-Arduino Uno <br>
+-Capteur graphite à partir d'un support papier et d'un crayon <br>
+-Flex Sensor <br>
+-Encodeur rotatoire Keyes KY-040 <br>
+-Ecran OLED 128x64 <br>
+-Module Bluetooth HC-05 <br>
+-Amplificateur opérationnel LTC1050 <br>
 
 ## II) Capteur à base de crayon graphite
 

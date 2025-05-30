@@ -22,6 +22,26 @@ Nous avons ensuite réalisé une application mobile connectée au module bluetoo
 Nous avons évalué le capteur sur un banc de test avant de conclure par la datasheet de notre capteur.<br>
 À la fin de la lecture de ce github, vous devriez savoir quel capteur choisir entre le graphite et le flex ;) . <br>
 
+# Livrables
+
+- PCB shield pour arduino uno <br>
+- Code arduino <br>
+- Banc de test du capteur <br>
+- Application android qui fonctionne par bluetooth <br>
+- Datasheet <br>
+
+# Matériel utilisé
+
+- Ecran OLED <br>
+- Flex sensor <br>
+- Encodeur Rotatoire <br>
+- Capteur Graphène <br>
+- Module Bluetooth <br>
+- LCT-1050 <br>
+- Potentiomètre MCP 41050 <br>
+- Résistances : 2x100kOhm, 1x33kOhm, 1*10kOhm, 1x1kOhm <br>
+- Capacités : 2x100nF, 1x1uF <br>
+
 ## II) Capteur à base de crayon graphite
 
 Ce capteur low-tech utilise la théorie de la percolation au sein d’un système granulaire constitué de nanoparticules de graphite.<br>
@@ -176,6 +196,15 @@ Les objectifs du banc étaient de pouvoir enregistrer les données, les traiter,
    
 ## VIII) Datasheet
 
-Nous avons déposé le PDF de la datasheet contenant une conclusion sur le choix de nos capteurs en fonction des résultats que nous avions obtenus que nou vous invitons à aller voir.
+Nous avons déposé le PDF de la datasheet contenant une conclusion sur le choix de nos capteurs en fonction des résultats que nous avions obtenus que nous vous invitons à aller voir. Nous vous alertons sur le fait que nous avons donné un modèle linéaire aux différentes mesures que nous avons obtenu en compression et en tension, malgré le fait que les courbes de base ne soient pas linéaires. Les sensibilités que nous calculons sont obtenues en prenant en compte nos modèles linéaires. <br>
+
+# Contacts
+<br>
+Si vous avez des questions sur ce projet, n'hésitez pas à contacter notre superbe duo (le binôme de l'année on a dit): 
+<br>
+
+David : hillah-a@insa-toulouse.fr
+<br>
+Enzo : ejacquet@insa-toulouse.fr
 
 

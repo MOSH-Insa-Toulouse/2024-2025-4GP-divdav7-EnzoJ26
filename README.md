@@ -1,4 +1,4 @@
-# 2024-2025-4GP-HILLAH-JACQUET
+ions# 2024-2025-4GP-HILLAH-JACQUET
 ---
 ## Sommaire 
    - [I) Contexte et objectifs du projet](#I-Contexteetobjectifsduprojet)
@@ -72,7 +72,7 @@ Voici ci dessous le schéma d'un modèle de capteur graphite. Dans notre projet,
 ## III) Electronique Analogique
 
 Ce capteur graphite possède une résistance variable de l'ordre du GΩ. Le courant généré lorsque l'on applique une tension de 5V aux bornes du capteur est très faible.<br>
-Pour obtenir un signal exploitable nous avons dû l'amplifier. Pour ce faire, nous avons utilisé un montage transimpédance constitué d'un amplificateur opérationnel.<br>
+Pour obtenir un signal exploitable nous devions l'amplifier. Pour ce faire, nous avons utilisé un montage transimpédance constitué d'un amplificateur opérationnel.<br>
 Pour cela nous avons dans un premier temps effectué une simulation électronique du capteur et de ce montage transimpédance sous LTSpice. Voici ci-dessous le montage réalisé sous LTSpice. Pour notre montage nous avons choisi l'AOP LTC1050 prenant en entrée un courant faible (de l'ordre d'une dizaine de picoampère).
 
 <p align="center">

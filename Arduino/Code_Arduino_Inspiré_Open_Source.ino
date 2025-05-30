@@ -6,9 +6,9 @@
 SoftwareSerial mySerial(rxPin ,txPin); //Definition du software serial
 
 
-//OLED ATTENTION, la librarie utilisée (d'origine) consomme énormement de mémoire RAM en buffer qui n'est pas affiché sur arduino (possible même si affiché seulement 40%)
+//OLED ATTENTION, la librarie utilisée (d'origine) consomme énormement de mémoire RAM en buffer.
 // Si le programme ne lance rien, même pas le setup, le problème peut venir de là.
-// On peut soit baisser le nombre de pixels dans l'écran, soit utiliser d'autre librairie moins gourmande facilement trouvable sur internet.
+// On peut soit baisser le nombre de pixels dans l'écran, soit utiliser d'autres librairies moins gourmandes facilement trouvables sur internet.
 #include <Adafruit_SSD1306.h>
 #define nombreDePixelsEnLargeur 128        // Taille de l'écran OLED, en pixel, au niveau de sa largeur
 #define nombreDePixelsEnHauteur 64        // Taille de l'écran OLED, en pixel, au niveau de sa hauteur
@@ -225,7 +225,7 @@ void MesureINST()
   int R1=10000;
   float Vadc=0;
   float Res=-1;
-  // Affiche l'affichage de mesureINST avant les mesures réelles, comme cela, l'utilisateur peut arreter d'appuyer sur le bouton OK et cela évite de le faire sortir du programme
+  // Affichage de mesureINST avant les mesures réelles, comme cela, l'utilisateur peut arrêter d'appuyer sur le bouton OK et cela évite de le faire sortir du programme
   ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
   ecranOLED.setTextSize(1);                   // Taille des caractères (1:1, puis 2:1, puis 3:1)
   ecranOLED.setCursor(0, 0);
@@ -249,7 +249,7 @@ void MesureINST()
   }while(Position==1); 
   
   
-  ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
+  ecranOLED.clearDisplay();                                   // Efface l'intégralité du buffer
   ecranOLED.setCursor(0, 0);
   ecranOLED.setTextSize(1);                 
   ecranOLED.setTextColor(SSD1306_BLACK, SSD1306_WHITE);   // Couleur du texte, et couleur du fond
@@ -264,8 +264,8 @@ void MesureINST()
 
 void DisplayAndTransmitter(float VALUE, int choix){
   char ResASCII[10];
-  dtostrf(VALUE, 5, 2, ResASCII); //Transforme le float en chaine de caractères
-  ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
+  dtostrf(VALUE, 5, 2, ResASCII); //Transforme le float en chaîne de caractères
+  ecranOLED.clearDisplay();                                   // Efface l'intégralité du buffer
   ecranOLED.setTextSize(1);                   // Taille des caractères (1:1, puis 2:1, puis 3:1)
   ecranOLED.setCursor(0, 0);
   ecranOLED.setTextColor(SSD1306_WHITE, SSD1306_BLACK);   // Couleur du texte, et couleur du fond
@@ -278,7 +278,7 @@ void DisplayAndTransmitter(float VALUE, int choix){
   ecranOLED.print(ResASCII); // Envoyer sur l'écran la valeur
   mySerial.write(ResASCII); // Envoyer sur le port bluetooth la valeur acquise
   Serial.println(ResASCII); // Afficher sur le port série la valeur de la tension mesuré en bytes
-  ecranOLED.display();                            // Transfert le buffer à l'écran
+  ecranOLED.display();                            // Transfert du buffer à l'écran
   delay(100);
 
 }
@@ -293,9 +293,9 @@ void Valider_Menu(){
 
 
 
-//Calibration basé sur un principe de dichotimie, voir internet. Essaie de se placer au centre de la plage des 1024 valeurs
+//Calibration basée sur un principe de dichotimie. Essaie de se placer au centre de la plage des 1024 valeurs.
 int Calibration(){
-  ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
+  ecranOLED.clearDisplay();                                   // Efface l'intégralité du buffer
   ecranOLED.setTextSize(1);                   // Taille des caractères (1:1, puis 2:1, puis 3:1)
   ecranOLED.setCursor(0, 0);
   ecranOLED.setTextColor(SSD1306_WHITE, SSD1306_BLACK);   // Couleur du texte, et couleur du fond
